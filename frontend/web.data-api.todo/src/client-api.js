@@ -1,3 +1,12 @@
+/**
+ * Construct a full endpoint URL given a path.
+ * 
+ * @param {string} path The path to append to the base URL 
+ * @returns {string} The full URL 
+ */
+endpointUrl(path) {
+  return `${this.baseUrl}/${path}`;
+}
 import jwtDecode from "jwt-decode";
 import atlasConfig from "./atlasConfig.json";
 
